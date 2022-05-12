@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddSourcePermission" xml:space="preserve">
+    <value>Add Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="NodeName" xml:space="preserve">
+    <value>Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="PluginName" xml:space="preserve">
+    <value>Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="ConfigLevelPluginPath" xml:space="preserve">
+    <value>SystemExplorer/Configuration</value>
+    <comment>// Do Not Change This.</comment>
+  </data>
+  <data name="Mnemonic" xml:space="preserve">
+    <value>Mnemonic</value>
+    <comment>//Modify to match your Mnemonic abbreviated name. This must be less than 10 characters.</comment>
+  </data>
+  <data name="PluginVersion" xml:space="preserve">
+    <value>1.0.0.0</value>
+  </data>
+  <data name="SourceLevelPluginPath" xml:space="preserve">
+    <value>SystemExplorer/Sources</value>
+    <comment>// Do Not Change This.</comment>
+  </data>
+  <data name="TabText" xml:space="preserve">
+    <value>Mnemonic Editor</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="TabTextUnsaved" xml:space="preserve">
+    <value>Mnemonic Editor *</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="ConfirmationDeleteRows" xml:space="preserve">
+    <value>Delete rows?</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="ExecCode" xml:space="preserve">
+    <value>SOURCE</value>
+    <comment>// This is the type of plug-in.  SOURCE is a plug-in that will appear in the Sources list and will include channels. SYSTEM is a Source that will appear in the Sources list but does not have channels.</comment>
+  </data>
+  <data name="PerformanceFunctionsPath" xml:space="preserve">
+    <value>\Customer.TestSLATE.Mnemonic.llb\Performance Functions.vi</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="ProcessName" xml:space="preserve">
+    <value>Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="PCName" xml:space="preserve">
+    <value>MOC</value>
+  </data>
+  <data name="ExecName" xml:space="preserve">
+    <value>MOC</value>
+    <comment>// The default PC to run this source from.  Usually the "MOC" entry is correct.</comment>
+  </data>
+  <data name="SourceName" xml:space="preserve">
+    <value>Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Template Manufacturer</value>
+  </data>
+  <data name="SerialNumber" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MenuItemCalibrateSource" xml:space="preserve">
+    <value>Calibrate Mnemonic Source</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="DefaultFilePath" xml:space="preserve">
+    <value>C:\temp\temp.txt</value>
+    <comment>// Safe to delete with deletion of the Balance Model</comment>
+  </data>
+  <data name="DefaultDescription" xml:space="preserve">
+    <value>Balance Description</value>
+    <comment>// Safe to delete with deletion of the Channel Model</comment>
+  </data>
+  <data name="DefaultBalName" xml:space="preserve">
+    <value>New Balance</value>
+    <comment>// Safe to delete with deletion of the Balance Model</comment>
+  </data>
+  <data name="VIName" xml:space="preserve">
+    <value>Mnemonic.vi</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="VIRelativeSourceDir" xml:space="preserve">
+    <value>Shared\SYSCOM</value>
+  </data>
+  <data name="VILLBName" xml:space="preserve">
+    <value>Customer.TestSLATE.Mnemonic.llb</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="CompatibleWithVersions" xml:space="preserve">
+    <value>12.*</value>
+    <comment>Core versions which this plugin is compatible with. You can use "*" to indicate a range of versions. * is assumed for any parts of the version number which are omitted, that is, "12.*" is equivalent to "12", and "11.0.0.*" is equivalent to "11.0.0". Prepend a "-" to indicate an exception, "+" to indicate an inclusion. e.g. "11.0.*, -11.0.23, -12.*, +12.1.5".</comment>
+  </data>
+  <data name="SystemExplorer" xml:space="preserve">
+    <value>SystemExplorer</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="EUDType" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="SourceID" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="RequiredSource" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ErrorMessage0001" xml:space="preserve">
+    <value>Mnemonic caught fire.</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="HighRFMEnd" type="System.Int32, mscorlib">
+    <value>100000000</value>
+  </data>
+  <data name="HighRFMStart" type="System.Int32, mscorlib">
+    <value>90000000</value>
+  </data>
+  <data name="PortNumber" type="System.Int32, mscorlib">
+    <value>28880</value>
+  </data>
+  <data name="WritesToRFM" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Acquire" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Calibrate" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Diagnostics" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Initialize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ListenForAll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ReloadDB" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Required" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Start" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Stop" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TVKill" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="InitializeAtPath" xml:space="preserve">
+    <value>SystemExplorer/Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="EditNode" xml:space="preserve">
+    <value>Edit Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="RemoveNode" xml:space="preserve">
+    <value>Remove Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="MainMenuPluginPath" xml:space="preserve">
+    <value>MainWindow</value>
+  </data>
+  <data name="MenuItemTemplate" xml:space="preserve">
+    <value>Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="ExecuteTemplateCalibration" xml:space="preserve">
+    <value>Execute Mnemonic Calibration</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="AddTemplate" xml:space="preserve">
+    <value>New Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full  text name</comment>
+  </data>
+  <data name="EditTemplate" xml:space="preserve">
+    <value>Edit Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="RemoveTemplate" xml:space="preserve">
+    <value>Remove Mnemonic</value>
+    <comment>//Modify to match your Mnemonic full text name</comment>
+  </data>
+  <data name="DefaultAIDescription" xml:space="preserve">
+    <value>Analog Input Channel</value>
+    <comment>// Safe to delete with deletion of the Channel Model</comment>
+  </data>
+  <data name="DefaultAIName" xml:space="preserve">
+    <value>NewAI</value>
+    <comment>// Safe to delete with deletion of the Channel Model</comment>
+  </data>
+  <data name="DefaultAODescription" xml:space="preserve">
+    <value>Analog Output Channel</value>
+    <comment>// Safe to delete with deletion of the Channel Model</comment>
+  </data>
+  <data name="DefaultAOName" xml:space="preserve">
+    <value>NewAO</value>
+    <comment>// Safe to delete with deletion of the Channel Model</comment>
+  </data>
+  <data name="DefaultDIDescription" xml:space="preserve">
+    <value>Digital Input Channel</value>
+    <comment>// Safe to delete with deletion of the Channel Model</comment>
+  </data>
+  <data name="DefaultDIName" xml:space="preserve">
+    <value>NewDI</value>
+    <comment>// Safe to delete with deletion of the Channel Model</comment>
+  </data>
+  <data name="DefaultDODescription" xml:space="preserve">
+    <value>Digital Output Channel</value>
+    <comment>// Safe to delete with deletion of the Channel Model</comment>
+  </data>
+  <data name="DefaultDOName" xml:space="preserve">
+    <value>NewDO</value>
+    <comment>// Safe to delete with deletion of the Channel Model</comment>
+  </data>
+  <data name="ConfigPluginAppender" xml:space="preserve">
+    <value>Cfg</value>
+    <comment>// Do Not Change This.</comment>
+  </data>
+  <data name="MenuPluginAppender" xml:space="preserve">
+    <value>Mnu</value>
+    <comment>// Do Not Change This.</comment>
+  </data>
+  <data name="SourcePluginAppender" xml:space="preserve">
+    <value>Src</value>
+    <comment>// Do Not Change This.</comment>
+  </data>
+  <data name="ExecuteTemplateDiagnostic" xml:space="preserve">
+    <value>Diagnostics</value>
+  </data>
+  <data name="ExecuteTemplateExecute" xml:space="preserve">
+    <value>Execute</value>
+  </data>
+  <data name="RenameTemplate" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="NoBlankSourceName" xml:space="preserve">
+    <value>Source Name cannot be blank</value>
+  </data>
+  <data name="CircularBufferInSeconds" xml:space="preserve">
+    <value>2.1</value>
+    <comment>// Number of seconds of data in circular buffer</comment>
+  </data>
+  <data name="DataSourceRate" xml:space="preserve">
+    <value>10</value>
+    <comment>// Data Source Rate in samples per second</comment>
+  </data>
+  <data name="RFMExtraMemoryInBytes" xml:space="preserve">
+    <value>0</value>
+    <comment>// # of bytes of  extra RFM Memory required by this source. Normally 0.</comment>
+  </data>
+</root>

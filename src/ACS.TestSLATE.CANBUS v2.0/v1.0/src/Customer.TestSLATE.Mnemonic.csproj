@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1169D1C-E61C-4A22-9939-6D87C7214264}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Customer.TestSLATE.Mnemonic</RootNamespace>
+    <AssemblyName>Customer.TestSLATE.Mnemonic</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>Customer.TestSLATE.Mnemonic.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\Customer.TestSLATE.Mnemonic.xml</DocumentationFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Jacobs.TestSLATE.Commands">
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\Jacobs.TestSLATE.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobs.TestSLATE.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a89cecb1d225e309, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\Jacobs.TestSLATE.DB.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobs.TestSLATE.ExtensionDoc">
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\Jacobs.TestSLATE.ExtensionDoc.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobs.TestSLATE.LabVIEWInterop.VIWrappers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a89cecb1d225e309, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\Jacobs.TestSLATE.LabVIEWInterop.VIWrappers.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobs.TestSLATE.MessageLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a89cecb1d225e309, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\Jacobs.TestSLATE.MessageLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobs.TestSLATE.PluginCore">
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\Jacobs.TestSLATE.PluginCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobs.TestSLATE.UX.Commands">
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\Jacobs.TestSLATE.UX.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobs.TestSLATE.UX.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a89cecb1d225e309, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\Jacobs.TestSLATE.UX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobs.TestSLATE.UX.SystemExplorer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a89cecb1d225e309, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\Jacobs.TestSLATE.UX.SystemExplorer.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="SandDock, Version=3.0.6.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Jacobs\Test SLATE\SandDock.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interop\Database\ExtensionDocManager.cs" />
+    <Compile Include="Interop\LabVIEW\VIWrapper.cs" />
+    <Compile Include="Interop\TestSLATE\ConfigNode.cs" />
+    <Compile Include="Interop\TestSLATE\MainMenuPlugin.cs" />
+    <Compile Include="Interop\TestSLATE\ConfigPlugin.cs" />
+    <Compile Include="Interop\TestSLATE\SubsystemNode.cs" />
+    <Compile Include="Interop\TestSLATE\SubsystemPlugin.cs" />
+    <Compile Include="Models\AnalogChannel.cs" />
+    <Compile Include="Models\Balance.cs" />
+    <Compile Include="Models\Balances.cs" />
+    <Compile Include="Models\BalanceValidator.cs" />
+    <Compile Include="Models\Channel.cs" />
+    <Compile Include="Models\Channels.cs" />
+    <Compile Include="Models\ChannelValidator.cs" />
+    <Compile Include="Models\CircularBufferConfig.cs" />
+    <Compile Include="Models\DefaultChannels.cs" />
+    <Compile Include="Models\IChannelModel.cs" />
+    <Compile Include="Models\IItemCollectionModel.cs" />
+    <Compile Include="Models\IModel.cs" />
+    <Compile Include="Models\RFMConfig.cs" />
+    <Compile Include="Models\NamedConfigItem.cs" />
+    <Compile Include="Models\RFMConfigItemValidator.cs" />
+    <Compile Include="Presenters\ChannelPresenter.cs" />
+    <Compile Include="Presenters\EditBoxPresenter.cs" />
+    <Compile Include="Presenters\GridPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IExportable.cs" />
+    <Compile Include="UI\IPrintable.cs" />
+    <Compile Include="UI\IReportable.cs" />
+    <Compile Include="UI\ISubsystemView.cs" />
+    <Compile Include="UI\IView.cs" />
+    <Compile Include="UI\Editor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Rename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Rename.Designer.cs">
+      <DependentUpon>Rename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SubsystemEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\SubsystemEditor.designer.cs">
+      <DependentUpon>SubsystemEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitTests\BalanceTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Rename.resx">
+      <DependentUpon>Rename.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customer.TestSLATE.Mnemonic.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,3822 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Customer.TestSLATE.Mnemonic</name>
+    </assembly>
+    <members>
+        <member name="T:Customer.TestSLATE.Mnemonic.Interop.Database.ExtensionDocManager">
+            <summary>
+              This class manages access to the Extension Docs
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.Database.ExtensionDocManager.LoadFromExtensionDoc(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass,Jacobs.TestSLATE.ExtensionDoc.ExtensionDoc@)">
+            <summary>
+              Loads a collection of NamedConfigItems from the extension Docs
+              Modify return type to match your object class.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.Database.ExtensionDocManager.SaveToExtensionDoc(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass,Jacobs.TestSLATE.ExtensionDoc.ExtensionDoc@,Customer.TestSLATE.Mnemonic.Models.NamedConfigItem)">
+            <summary>
+              Saves NamedConfigItem to extension doc.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.Database.ExtensionDocManager.DeleteFromExtensionDoc(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass)">
+            <summary>
+              Deletes all ExtensionDocs associated with specified source.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Interop.LabVIEW.VIWrapper">
+            <summary>
+              This class is a generic VI Wrapper for interacting with a VI. As a requirement, this project must be built
+              with it's language features set to .NET 3.5 or lower. It cannot be .NET 4.0 as LabVIEW doesn't support those dlls.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.LabVIEW.VIWrapper.#ctor">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Interop.LabVIEW.VIWrapper" /> class.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.LabVIEW.VIWrapper.CellId">
+            <summary>
+            Gets or sets the cell id.
+            </summary>
+            <value>
+            The cell id.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.LabVIEW.VIWrapper.CfgId">
+            <summary>
+            Gets or sets the CFG id.
+            </summary>
+            <value>
+            The CFG id.
+            </value>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode">
+            <summary>
+              This class is basic node for the config nodes and editors.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode._source">
+            <summary>
+            The Source.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode._cell">
+            <summary>
+            The Cell
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.#ctor">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode" /> class.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.#ctor(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass,Jacobs.TestSLATE.Cell.DomainLayer.Cells.ObjectClass)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode"/> class.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="cell"></param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.CreateMenuItems">
+            <summary>
+              Create the Menu Items associated with this node.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.Refresh">
+            <summary>
+              Refreshes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.UpdateData">
+            <summary>
+              Updates the data.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.UpdateName">
+            <summary>
+              Updates the name.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.OnEditClick(System.Object,System.EventArgs)">
+            <summary>
+              Called when [on Edit clicked].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The event arguments.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.OnRemoveClick(System.Object,System.EventArgs)">
+            <summary>
+            Called when [remove click].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.LaunchUI(Jacobs.TestSLATE.Cell.DomainLayer.Configurations.ObjectClass)">
+            <summary>
+              Opens the editor.
+            </summary>
+            <param name = "config">The config.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.InitPresenter(Customer.TestSLATE.Mnemonic.UI.IView,Customer.TestSLATE.Mnemonic.Models.IModel)">
+            <summary>
+            Inits the presenter.
+            </summary>
+            <param name="view">The view.</param>
+            <param name="model">The model.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.GetData(Jacobs.TestSLATE.Cell.DomainLayer.Configurations.ObjectClass)">
+            <summary>
+            Gets the data.
+            </summary>
+            <param name="config">The config.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.OpenEditor(Jacobs.TestSLATE.Cell.DomainLayer.Configurations.ObjectClass)">
+            <summary>
+            Opens the editor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigNode.OnSaving(Jacobs.TestSLATE.UX.Core.TSTabbedDocument)">
+            <summary>
+              Called when [on Saving]
+            </summary>
+            <param name = "dockWindow">The dock window that is saving.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin">
+            <summary>
+              This class is what loads the plugin into Test SLATE.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.Name">
+            <summary>
+              Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.Description">
+            <summary>
+            Gets the description.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.Version">
+            <summary>
+              Gets the version.
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.Path">
+            <summary>
+              Gets the path.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.CompatibleWith">
+            <summary>
+            Gets the compatible with.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.Initialize(System.Object)">
+            <summary>
+              Initializes the specified parent.
+            </summary>
+            <param name = "parent">The parent.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.CreateMainMenuItems">
+            <summary>
+            Add main manu items "Data Analysis", "Plot Builder", "Report Builder"  under the main menu "Data Analysis".
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.OnMainmenuTemplateCalibrateClick(System.Object,System.EventArgs)">
+            <summary>
+            Called when [calibrate click].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.OnMainmenuTemplateExecuteClick(System.Object,System.EventArgs)">
+            <summary>
+            Called when [Execute click].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.OnMainmenuTemplateDiagnosticsClick(System.Object,System.EventArgs)">
+            <summary>
+            Called when [Diagnostics template click].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.MainMenuPlugin.CreatePermissions">
+            <summary>
+              Create permissions.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin">
+            <summary>
+              This class is what loads the plugin into Test SLATE.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.Name">
+            <summary>
+              Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.Description">
+            <summary>
+            Gets the description.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.Version">
+            <summary>
+              Gets the version.
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.Path">
+            <summary>
+              Gets the path.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.CompatibleWith">
+            <summary>
+            Gets the compatible with.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.Initialize(System.Object)">
+            <summary>
+              Initializes the specified parent.
+            </summary>
+            <param name = "parent">The parent.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.CreateContextMenuItems(Jacobs.TestSLATE.UX.SystemExplorer.SystemExplorerNode)">
+            <summary>
+            Creates the context menu items.
+            </summary>
+            <param name="parentNode">The parent node.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.OnAddClick(System.Object,System.EventArgs)">
+            <summary>
+            Called when [add click].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.CreateChildNode(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass,Jacobs.TestSLATE.Cell.DomainLayer.Cells.ObjectClass,Jacobs.TestSLATE.UX.SystemExplorer.SystemExplorerNode)">
+            <summary>
+            Creates the child node.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="cell"></param>
+            <param name="root">The root.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.CreateNewSource(Jacobs.TestSLATE.Cell.DomainLayer.Environment,Jacobs.TestSLATE.Cell.DomainLayer.Cells.ObjectClass)">
+            <summary>
+            Creates the new source.
+            </summary>
+            <param name="environment">The environment.</param>
+            <param name="cell">The cell.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.CreateErrorCodes(Jacobs.TestSLATE.Cell.DomainLayer.Mnemonics.ObjectClass)">
+            <summary>
+            Creates the error codes.
+            </summary>
+            <param name="mnemonic">The mnemonic.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.CreateCommandDeliveryProcess(Jacobs.TestSLATE.Cell.DomainLayer.Environment,Jacobs.TestSLATE.Cell.DomainLayer.Cells.ObjectClass,Jacobs.TestSLATE.Cell.DomainLayer.Mnemonics.ObjectClass,Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass)">
+            <summary>
+            Creates the command delivery process.
+            </summary>
+            <param name="environment">The environment.</param>
+            <param name="cell">The cell.</param>
+            <param name="mnemonic">The mnemonic.</param>
+            <param name="source">The source.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.CreateMnemonic(Jacobs.TestSLATE.Cell.DomainLayer.Environment)">
+            <summary>
+            Creates the mnemonic.
+            </summary>
+            <param name="environment">The environment.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.GetCommandDeliveryId(Jacobs.TestSLATE.Cell.DomainLayer.Environment)">
+            <summary>
+            Gets the command delivery id.
+            </summary>
+            <param name="environment">The environment.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.ConfigPlugin.CreateNode(Jacobs.TestSLATE.UX.SystemExplorer.SystemExplorerNode)">
+            <summary>
+              Creates the node.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode">
+            <summary>
+              This class is basic node for the subsystem nodes and editors.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.#ctor">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode" /> class.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.#ctor(Jacobs.TestSLATE.Cell.DomainLayer.IObjectClass)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode" /> class.
+            </summary>
+            <param name = "source">The source.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.CreateMenuItems">
+            <summary>
+              Create the Menu Items associated with this node.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.Refresh">
+            <summary>
+              Refreshes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.UpdateData">
+            <summary>
+              Updates the data.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.UpdateName">
+            <summary>
+              Updates the name.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.OnEditClick(System.Object,System.EventArgs)">
+            <summary>
+              Called when [on Edit clicked].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The event arguments.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.OnRemoveClick(System.Object,System.EventArgs)">
+            <summary>
+              Called when [remove click].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.OnRenameClick(System.Object,System.EventArgs)">
+            <summary>
+              Called when [rename click].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.LaunchUI(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass)">
+            <summary>
+              Opens the editor.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.InitChannelPresenter(Customer.TestSLATE.Mnemonic.UI.ISubsystemView,Customer.TestSLATE.Mnemonic.Models.IChannelModel,Customer.TestSLATE.Mnemonic.Models.IChannelModel,Customer.TestSLATE.Mnemonic.Models.IChannelModel,Customer.TestSLATE.Mnemonic.Models.IChannelModel)">
+            <summary>
+              Inits the presenter.
+            </summary>
+            <param name = "view">The view.</param>
+            <param name = "AI">The AI model.</param>
+            <param name = "AO">The AO model.</param>
+            <param name = "DI">The DI model.</param>
+            <param name = "DO">The DO model.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.InitRFMConfigPresenter(Customer.TestSLATE.Mnemonic.UI.ISubsystemView,Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel)">
+            <summary>
+              Inits the presenter.
+            </summary>
+            <param name = "view">The view.</param>
+            <param name = "rfmSetup">The RFM Config model.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.GetData(Jacobs.TestSLATE.Cell.DomainLayer.ISource,System.String)">
+            <summary>
+            Gets the data.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="channelType">The Channel Type we want retrieved.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.GetRFMConfigItems(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass,Jacobs.TestSLATE.ExtensionDoc.ExtensionDoc@)">
+            <summary>
+            Gets the RFM Config data.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="doc">The doc.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.OpenEditor(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass)">
+            <summary>
+              Opens the editor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemNode.OnSaving(Jacobs.TestSLATE.UX.Core.TSTabbedDocument)">
+            <summary>
+              Called when [on Saving]
+            </summary>
+            <param name = "dockWindow">The dock window that is saving.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin">
+            <summary>
+              This class is what loads the plugin into Test SLATE.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.Name">
+            <summary>
+              Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.Description">
+            <summary>
+              Gets the description.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.Version">
+            <summary>
+              Gets the version.
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.Path">
+            <summary>
+              Gets the path.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CompatibleWith">
+            <summary>
+              Gets the compatible with.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.Initialize(System.Object)">
+            <summary>
+              Initializes the specified parent.
+            </summary>
+            <param name = "parent">The parent.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateContextMenuItems(Jacobs.TestSLATE.UX.SystemExplorer.SystemExplorerNode)">
+            <summary>
+              Creates the context menu items.
+            </summary>
+            <param name = "parentNode">The parent node.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.OnAddClick(System.Object,System.EventArgs)">
+            <summary>
+              Called when [add click].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateTemplate(Jacobs.TestSLATE.Cell.DomainLayer.Cells.ObjectClass)">
+            <summary>
+              Creates the TACS.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateChildNode(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass,Jacobs.TestSLATE.UX.SystemExplorer.SystemExplorerNode)">
+            <summary>
+            Creates the child node.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="root">The root.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateNewSource(Jacobs.TestSLATE.Cell.DomainLayer.Environment,Jacobs.TestSLATE.Cell.DomainLayer.Cells.ObjectClass)">
+            <summary>
+              Creates the new source.
+            </summary>
+            <param name = "environment">The environment.</param>
+            <param name = "cell">The cell.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreatePermissions">
+            <summary>
+              Create permissions.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateErrorCodes(Jacobs.TestSLATE.Cell.DomainLayer.Mnemonics.ObjectClass)">
+            <summary>
+              Creates the error codes.
+            </summary>
+            <param name = "mnemonic">The mnemonic.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateCommandDeliveryProcess(Jacobs.TestSLATE.Cell.DomainLayer.Environment,Jacobs.TestSLATE.Cell.DomainLayer.Cells.ObjectClass,Jacobs.TestSLATE.Cell.DomainLayer.Mnemonics.ObjectClass,Jacobs.TestSLATE.Cell.DomainLayer.ISource)">
+            <summary>
+              Creates the command delivery process.
+            </summary>
+            <param name = "environment">The environment.</param>
+            <param name = "cell">The cell.</param>
+            <param name = "mnemonic">The mnemonic.</param>
+            <param name = "source">The source.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateMnemonic(Jacobs.TestSLATE.Cell.DomainLayer.Environment)">
+            <summary>
+              Creates the mnemonic.
+            </summary>
+            <param name = "environment">The environment.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateDefaultChannels(Jacobs.TestSLATE.Cell.DomainLayer.ISource,Jacobs.TestSLATE.Cell.DomainLayer.Cells.ObjectClass)">
+            <summary>
+              Creates the default Template channels.
+            </summary>
+            <param name = "source">The source.</param>
+            <param name = "cell">The cell.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateRFMExtensionDocs(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass)">
+            <summary>
+              Creates the default RFM ExtensionDocs Table.
+            </summary>
+            <param name = "source">The source.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.GetCommandDeliveryId(Jacobs.TestSLATE.Cell.DomainLayer.Environment)">
+            <summary>
+              Gets the command delivery id.
+            </summary>
+            <param name = "environment">The environment.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Interop.TestSLATE.SubsystemPlugin.CreateNode(Jacobs.TestSLATE.UX.SystemExplorer.SystemExplorerNode)">
+            <summary>
+              Creates the node.
+            </summary>
+            <param name = "parentNode">The parent node.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.AnalogChannel">
+            <summary>
+              An extension of the base Jacobs.TestVIEW.Cell.DomainLayer.Channels.ObjectClass with validation built in.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.BadCode">
+            <summary>
+              Gets or sets the Bad Code.
+            </summary>
+            <value>The Bad Code.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.ChannelName">
+            <summary>
+              Gets or sets the name of the channel.
+            </summary>
+            <value>The name of the channel.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.ChannelDescr">
+            <summary>
+            Gets or sets the channel descr.
+            </summary>
+            <value>
+            The channel descr.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.ChannelType">
+            <summary>
+              Gets or sets the channel type.
+            </summary>
+            <value>The channel type.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.Units">
+            <summary>
+              Gets or sets the Units.
+            </summary>
+            <value>The Units.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.EUDType">
+            <summary>
+              Gets or sets the EUD Type.
+            </summary>
+            <value>The EUD Type.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.ISORefChannelID">
+            <summary>
+              Gets or sets the ISORefChannelID.
+            </summary>
+            <value>The ISORefChannelID.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.Active">
+            <summary>
+              Gets or sets the Active flag.
+            </summary>
+            <value>The Active flag.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.LowRange">
+            <summary>
+              Gets or sets the LowRange.
+            </summary>
+            <value>The Low Range.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.HighRange">
+            <summary>
+              Gets or sets the High Range.
+            </summary>
+            <value>The High Range.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.Uncertainty">
+            <summary>
+              Gets or sets the Uncertainty.
+            </summary>
+            <value>The Uncertainty.</value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.CreateNewChannel(System.String,System.String,System.String,System.String,System.Single,System.Single,System.Int32)">
+            <summary>
+              This is the public factory method that returns the default object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.#ctor(System.String,System.String,System.String,System.String,System.Single,System.Single,System.Int32)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.AnalogChannel" /> class.
+              This is a private constructor that generates a default object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.AnalogChannel.#ctor(Jacobs.TestSLATE.Cell.DomainLayer.Channels.ObjectClass)">
+            <summary>
+              Creates a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.Channel" /> class from a TSChannel.
+              Copy Constructor.
+            </summary>
+            <param name = "channel">The channel.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.Balance">
+            <summary>
+              An extension of the base Jacobs.TestVIEW.Cell.DomainLayer.Balances.ObjectClass with validation built in.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Balance._balance">
+            <summary>
+              The Test SLATE DomainLayer Balance.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Balance._backup">
+            <summary>
+              Backup of this instance.
+              This preserves the state of this model during user edits, before the changes are committed.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Balance._inTransaction">
+            <summary>
+              Indicates that the user is still making changes and has not committed them.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.#ctor">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.Balance" /> class.
+              This is a private constructor that generates a default object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.#ctor(Jacobs.TestSLATE.Cell.DomainLayer.Balances.ObjectClass)">
+            <summary>
+              Creates a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.Balance" /> class from a TSBalance.
+              Copy Constructor.
+            </summary>
+            <param name = "balance">The balance.</param>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.BalanceName">
+            <summary>
+              Gets or sets the name of the balance.
+            </summary>
+            <value>The name of the balance.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.BalanceDescr">
+            <summary>
+            Gets or sets the balance descr.
+            </summary>
+            <value>
+            The balance descr.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.AeroTareFilePath">
+            <summary>
+              Gets or sets the aero tare file path.
+            </summary>
+            <value>The aero tare file path.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.CalibrationFilePath">
+            <summary>
+              Gets or sets the calibration file path.
+            </summary>
+            <value>The calibration file path.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.WeightTareFilePath">
+            <summary>
+              Gets or sets the weight tare file path.
+            </summary>
+            <value>The weight tare file path.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.BalanceOrder">
+            <summary>
+              Gets or sets the balance order.
+            </summary>
+            <value>The balance order.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.NumberOfReadings">
+            <summary>
+              Gets or sets the number of readings.
+            </summary>
+            <value>The number of readings.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.BalanceReference">
+            <summary>
+              Gets or sets the balance reference.
+            </summary>
+            <value>The balance reference.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.Dirty">
+            <summary>
+              Gets or sets a value indicating whether this <see cref = "T:Customer.TestSLATE.Mnemonic.Models.Balance" /> is dirty.
+            </summary>
+            <value>
+              <c>true</c> if dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.Validator">
+            <summary>
+              The balance validator.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balance.Parent">
+            <summary>
+              Gets or sets the parent.
+            </summary>
+            <value>The parent.</value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.CompareTo(Customer.TestSLATE.Mnemonic.Models.Balance)">
+            <summary>
+              Compares the current object with another object of the same type.
+              Specifically this compares balances by BalanceOrder.
+            </summary>
+            <param name = "other">An object to compare with this object.</param>
+            <returns>
+              A 32-bit signed integer that indicates the relative order of the objects being compared. The return value has the following meanings: Value Meaning Less than zero This object is less than the other parameter.Zero This object is equal to other. Greater than zero This object is greater than other.
+            </returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.BeginEdit">
+            <summary>
+              Begins an edit on an object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.CancelEdit">
+            <summary>
+              Discards changes since the last <see cref = "M:System.ComponentModel.IEditableObject.BeginEdit"></see> call.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.EndEdit">
+            <summary>
+              Pushes changes since the last <see cref = "M:System.ComponentModel.IEditableObject.BeginEdit"></see> or <see cref = "M:System.ComponentModel.IBindingList.AddNew"></see> call into the underlying object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.Equals(Customer.TestSLATE.Mnemonic.Models.Balance)">
+            <summary>
+              Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name = "other">An object to compare with this object.</param>
+            <returns>
+              True if the current object is equal to the other parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="E:Customer.TestSLATE.Mnemonic.Models.Balance.PropertyChanged">
+            <summary>
+              Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.CreateNewBalance">
+            <summary>
+              This is the public factory method that returns the default object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.ToString">
+            <summary>
+              Returns a <see cref = "T:System.String"></see> that represents the current <see cref = "T:System.Object"></see>.
+            </summary>
+            <returns>
+              A <see cref = "T:System.String"></see> that represents the current <see cref = "T:System.Object"></see>.
+            </returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.NotifyPropertyChanged(System.String)">
+            <summary>
+              Notifies the property changed.
+            </summary>
+            <param name = "info">The info.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balance.Save(System.Int32,System.Int32)">
+            <summary>
+              Saves this instance.
+            </summary>
+            <param name = "cellId">The cell id.</param>
+            <param name = "configId">The config id.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.Balances">
+            <summary>
+            A collection of Balances
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Balances._cellId">
+            <summary>
+            The Cell Id.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Balances._configId">
+            <summary>
+            The Config Id.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balances.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customer.TestSLATE.Mnemonic.Models.Balances"/> class.
+            </summary>
+            <param name="cellId">The cell id.</param>
+            <param name="cfgId">The CFG id.</param>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balances.HasError">
+            <summary>
+            Gets a value indicating whether this instance has error.
+            </summary>
+            <value>
+              <c>true</c> if this instance has error; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balances.IsDirty">
+            <summary>
+            Gets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balances.AddNew">
+            <summary>
+            Adds the new.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balances.Insert(System.Int32)">
+            <summary>
+            Inserts the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balances.Remove(System.Int32)">
+            <summary>
+            Removes the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balances.Save">
+            <summary>
+            Saves the specified cell id.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balances.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Balances.IsValid">
+            <summary>
+            Gets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balances.Validate">
+            <summary>
+            Validates the Collection of Balances
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Balances.SwapItems(System.Int32,System.Int32)">
+            <summary>
+            Swaps the positions of two balances.
+            </summary>
+            <param name="sourceRow">The source row.</param>
+            <param name="targetRow">The target row.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.BalanceValidator">
+            <summary>
+              This class provides all of the validation for a Balance.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyNameBalname">
+            <summary>
+              The string representation of the BalanceName property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyNameOrder">
+            <summary>
+              The string representation of the BalanceOrder property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyNameReference">
+            <summary>
+              The string representation of the BalanceReference property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyNameReadings">
+            <summary>
+              The string representation of the NumberOfReadings property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyNameAeropath">
+            <summary>
+              The string representation of the AeroTareFilePath property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyNameWtpath">
+            <summary>
+              The string representation of the WeightTareFilePath property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyNameCalpath">
+            <summary>
+              The string representation of the CalibrationFilePath property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyNameInvalid">
+            <summary>
+              The string representation of an Invalid property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyNameIsvalid">
+            <summary>
+              The string representation of the IsValid property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator._balance">
+            <summary>
+              The balance the Validator is associated with.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.BalanceValidator._propertyErrors">
+            <summary>
+              The collection of property errors.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.#ctor(Customer.TestSLATE.Mnemonic.Models.Balance)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.BalanceValidator" /> class.
+            </summary>
+            <param name = "balance">The balance.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.#ctor(Customer.TestSLATE.Mnemonic.Models.Balance,System.Boolean)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.BalanceValidator" /> class.
+            </summary>
+            <param name = "balance">The balance.</param>
+            <param name = "defaultInvalid">if set to <c>true</c> [default invalid].</param>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.IsValid">
+            <summary>
+              Gets or sets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.InvalidOrder">
+            <summary>
+              Gets or sets a value indicating whether [invalid order].
+            </summary>
+            <value>
+              <c>true</c> if [invalid order]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.InvalidName">
+            <summary>
+              Gets or sets a value indicating whether [invalid name].
+            </summary>
+            <value>
+              <c>true</c> if [invalid name]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.InvalidReference">
+            <summary>
+              Gets or sets a value indicating whether [invalid reference].
+            </summary>
+            <value>
+              <c>true</c> if [invalid reference]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.InvalidNumberOfReadings">
+            <summary>
+              Gets or sets a value indicating whether [invalid number of readings].
+            </summary>
+            <value>
+              <c>true</c> if [invalid number of readings]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.InvalidAeroTarePath">
+            <summary>
+              Gets or sets a value indicating whether [invalid aero tare path].
+            </summary>
+            <value>
+              <c>true</c> if [invalid aero tare path]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.InvalidWeightTarePath">
+            <summary>
+              Gets or sets a value indicating whether [invalid weight tare path].
+            </summary>
+            <value>
+              <c>true</c> if [invalid weight tare path]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.InvalidCalibrationFilePath">
+            <summary>
+              Gets or sets a value indicating whether [invalid calibration file path].
+            </summary>
+            <value>
+              <c>true</c> if [invalid calibration file path]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.Item(System.String)">
+            <summary>
+              Gets the <see cref = "T:System.String" /> with the specified property name.
+            </summary>
+        </member>
+        <member name="E:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.PropertyChanged">
+            <summary>
+              Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.RegisterError(System.String,System.String)">
+            <summary>
+              Registers the error.
+            </summary>
+            <param name = "propertyName">Name of the property.</param>
+            <param name = "message">The message.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.ClearError(System.String)">
+            <summary>
+              Clears the error.
+            </summary>
+            <param name = "propertyName">Name of the property.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.NotifyPropertyChanged(System.String)">
+            <summary>
+              Notifies the property changed.
+            </summary>
+            <param name = "info">The info.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.OnBalancePropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+              Called when [balance property changed].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.ComponentModel.PropertyChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.Validate">
+            <summary>
+              Validates this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.ValidateName(System.String)">
+            <summary>
+              Validates the name.
+            </summary>
+            <param name = "name">The name.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.ValidateAeroPath(System.String)">
+            <summary>
+              Validates the aero path.
+            </summary>
+            <param name = "path">The path.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.ValidateWeightPath(System.String)">
+            <summary>
+              Validates the weight path.
+            </summary>
+            <param name = "path">The path.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.ValidateCalPath(System.String)">
+            <summary>
+              Validates the cal path.
+            </summary>
+            <param name = "path">The path.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.ValidateOrder(System.Int32)">
+            <summary>
+              Validates the order.
+            </summary>
+            <param name = "order">The order.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.ValidateReadings(System.Int32)">
+            <summary>
+              Validates the readings.
+            </summary>
+            <param name = "readings">The readings.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.BalanceValidator.ValidateReference(System.Int32,System.Int32)">
+            <summary>
+              Validates the reference.
+            </summary>
+            <param name = "reference">The reference.</param>
+            <param name = "order">The order.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.Channel">
+            <summary>
+              An extension of the base Jacobs.TestVIEW.Cell.DomainLayer.Channels.ObjectClass with validation built in.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Channel._channel">
+            <summary>
+              The Test SLATE DomainLayer Channel.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Channel._presenter">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Channel._backup">
+            <summary>
+              Backup of this instance.
+              This preserves the state of this model during user edits, before the changes are committed.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Channel._inTransaction">
+            <summary>
+              Indicates that the user is still making changes and has not committed them.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.#ctor(System.String,System.String,System.String,System.String,System.Single,System.Single,System.Int32)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.Channel" /> class.
+              This is a private constructor that generates a default object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.#ctor">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.Channel" /> class.
+              This is a private constructor that generates a default object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.#ctor(Jacobs.TestSLATE.Cell.DomainLayer.Channels.ObjectClass)">
+            <summary>
+              Creates a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.Channel" /> class from a TSChannel.
+              Copy Constructor.
+            </summary>
+            <param name = "channel">The channel.</param>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.ChannelNumber">
+            <summary>
+              Gets or sets the ChannelNumber.
+            </summary>
+            <value>The Channel Number.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.ChannelName">
+            <summary>
+              Gets or sets the name of the channel.
+            </summary>
+            <value>The name of the channel.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.EUDType">
+            <summary>
+              Gets or sets the EUD Type.
+            </summary>
+            <value>The EUD Type.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.ISORefChannelID">
+            <summary>
+              Gets or sets the ISORefChannelID.
+            </summary>
+            <value>The ISORefChannelID.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.HighRange">
+            <summary>
+              Gets or sets the High Range.
+            </summary>
+            <value>The High Range.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.LowRange">
+            <summary>
+              Gets or sets the High Range.
+            </summary>
+            <value>The High Range.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.ChannelDescr">
+            <summary>
+            Gets or sets the channel descr.
+            </summary>
+            <value>
+            The channel descr.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.ChannelType">
+            <summary>
+              Gets or sets the channel type.
+            </summary>
+            <value>The channel type.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.Units">
+            <summary>
+              Gets or sets the Units.
+            </summary>
+            <value>The Units.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.Uncertainty">
+            <summary>
+              Gets or sets the Uncertainty.
+            </summary>
+            <value>The Uncertainty.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.Dirty">
+            <summary>
+              Gets or sets a value indicating whether this <see cref = "T:Customer.TestSLATE.Mnemonic.Models.Channel" /> is dirty.
+            </summary>
+            <value>
+              <c>true</c> if dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.Validator">
+            <summary>
+              The balance validator.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channel.Parent">
+            <summary>
+              Gets or sets the parent.
+            </summary>
+            <value>The parent.</value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.CompareTo(Customer.TestSLATE.Mnemonic.Models.Channel)">
+            <summary>
+              Compares the current object with another object of the same type.
+              Specifically this compares balances by BalanceOrder.
+            </summary>
+            <param name = "other">An object to compare with this object.</param>
+            <returns>
+              A 32-bit signed integer that indicates the relative order of the objects being compared. The return value has the following meanings: Value Meaning Less than zero This object is less than the other parameter.Zero This object is equal to other. Greater than zero This object is greater than other.
+            </returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.BeginEdit">
+            <summary>
+              Begins an edit on an object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.CancelEdit">
+            <summary>
+              Discards changes since the last <see cref = "M:System.ComponentModel.IEditableObject.BeginEdit"></see> call.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.EndEdit">
+            <summary>
+              Pushes changes since the last <see cref = "M:System.ComponentModel.IEditableObject.BeginEdit"></see> or <see cref = "M:System.ComponentModel.IBindingList.AddNew"></see> call into the underlying object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.Equals(Customer.TestSLATE.Mnemonic.Models.Channel)">
+            <summary>
+              Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name = "other">An object to compare with this object.</param>
+            <returns>
+              True if the current object is equal to the other parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="E:Customer.TestSLATE.Mnemonic.Models.Channel.PropertyChanged">
+            <summary>
+              Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.CreateNewChannel(System.String,System.String,System.String,System.String,System.Single,System.Single,System.Int32)">
+            <summary>
+              This is the public factory method that returns the default object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.CreateNewChannel(Customer.TestSLATE.Mnemonic.Models.Channel)">
+            <summary>
+              This is the public factory method that returns the default object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.ToString">
+            <summary>
+              Returns a <see cref = "T:System.String"></see> that represents the current <see cref = "T:System.Object"></see>.
+            </summary>
+            <returns>
+              A <see cref = "T:System.String"></see> that represents the current <see cref = "T:System.Object"></see>.
+            </returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.NotifyPropertyChanged(System.String)">
+            <summary>
+              Notifies the property changed.
+            </summary>
+            <param name = "info">The info.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channel.Save(System.Int32,System.Int32)">
+            <summary>
+              Saves this instance.
+            </summary>
+            <param name = "cellId">The cell id.</param>
+            <param name = "srcId">The config id.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.Channels`1">
+            <summary>
+            A collection of Channels
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Channels`1._cellId">
+            <summary>
+            The Cell Id.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Channels`1._srcId">
+            <summary>
+            The Source Id.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Channels`1._defChannelType">
+            <summary>
+            The Channel Type for this model.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Channels`1._defChannelDescription">
+            <summary>
+            The Default Channel Description for this model.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.Channels`1._defChannelName">
+            <summary>
+            The Default Channel Name for this model.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.GetNameAt(System.Int32)">
+            <summary>
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.GetCount">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customer.TestSLATE.Mnemonic.Models.Channels`1"/> class.
+            </summary>
+            <param name="cellId">The cell id.</param>
+            <param name="srcId">The Source id.</param>
+            <param name="channelType">The Channel Type for this model.</param>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channels`1.HasError">
+            <summary>
+            Gets a value indicating whether this instance has error.
+            </summary>
+            <value>
+              <c>true</c> if this instance has error; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channels`1.IsDirty">
+            <summary>
+            Gets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.AddNew">
+            <summary>
+            Adds the new.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.Insert(System.Int32)">
+            <summary>
+            Inserts the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.Remove(System.Int32)">
+            <summary>
+            Removes the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.Remove">
+            <summary>
+            Removes the specified index.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.UpdateChannelNumbers">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.SetPresenter(Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.Save">
+            <summary>
+            Saves the specified cell id.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.Channels`1.IsValid">
+            <summary>
+            Gets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.Validate">
+            <summary>
+            Validates the Collection of Channels
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.Channels`1.SwapItems(System.Int32,System.Int32)">
+            <summary>
+            Swaps the positions of two balances.
+            </summary>
+            <param name="sourceRow">The source row.</param>
+            <param name="targetRow">The target row.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.ChannelValidator">
+            <summary>
+              This class provides all of the validation for a Channel.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameChannelName">
+            <summary>
+              The string representation of the Channel property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameChannelDescr">
+            <summary>
+              The string representation of the BalanceOrder property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameChannelType">
+            <summary>
+              The string representation of the ChannelType property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameEUDType">
+            <summary>
+              The string representation of the EUDType property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameISORefChnlID">
+            <summary>
+              The string representation of the ISORefChannelID property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameBadCode">
+            <summary>
+              The string representation of the BadCode property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameActive">
+            <summary>
+              The string representation of the Active property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameLowRange">
+            <summary>
+              The string representation of the LowRange property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameHighRange">
+            <summary>
+              The string representation of the HighRange property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameUncertainty">
+            <summary>
+              The string representation of the Uncertainty property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameUnits">
+            <summary>
+              The string representation of the Units property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameInvalid">
+            <summary>
+              The string representation of an Invalid property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyNameIsvalid">
+            <summary>
+              The string representation of the IsValid property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator._channel">
+            <summary>
+              The channel the Validator is associated with.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.ChannelValidator._propertyErrors">
+            <summary>
+              The collection of property errors.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.#ctor(Customer.TestSLATE.Mnemonic.Models.Channel)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.ChannelValidator" /> class.
+            </summary>
+            <param name = "channel">The channel.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.#ctor(Customer.TestSLATE.Mnemonic.Models.Channel,System.Boolean)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.ChannelValidator" /> class.
+            </summary>
+            <param name = "channel">The channel.</param>
+            <param name = "defaultInvalid">if set to <c>true</c> [default invalid].</param>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.IsValid">
+            <summary>
+              Gets or sets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.InvalidName">
+            <summary>
+              Gets or sets a value indicating whether [invalid name].
+            </summary>
+            <value>
+              <c>true</c> if [invalid name]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.Item(System.String)">
+            <summary>
+              Gets the <see cref = "T:System.String" /> with the specified property name.
+            </summary>
+        </member>
+        <member name="E:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.PropertyChanged">
+            <summary>
+              Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.RegisterError(System.String,System.String)">
+            <summary>
+              Registers the error.
+            </summary>
+            <param name = "propertyName">Name of the property.</param>
+            <param name = "message">The message.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.ClearError(System.String)">
+            <summary>
+              Clears the error.
+            </summary>
+            <param name = "propertyName">Name of the property.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.NotifyPropertyChanged(System.String)">
+            <summary>
+              Notifies the property changed.
+            </summary>
+            <param name = "info">The info.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.OnChannelPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+              Called when [balance property changed].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.ComponentModel.PropertyChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.Validate">
+            <summary>
+              Validates this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.ChannelValidator.ValidateName(System.String)">
+            <summary>
+              Validates the name.
+            </summary>
+            <param name = "name">The name.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig">
+            <summary>
+            A collection of Circular Buffer Configuration Items (NamedConfigItem)
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig._cellId">
+            <summary>
+            The Cell Id.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig._srcId">
+            <summary>
+            The Source Id.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig._doc">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customer.TestSLATE.Mnemonic.Models.Channels`1"/> class.
+            </summary>
+            <param name="cellId">The cell id.</param>
+            <param name="srcId">The Source id.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.GetItemAt(System.Int32)">
+            <summary>
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.HasError">
+            <summary>
+            Gets a value indicating whether this instance has error.
+            </summary>
+            <value>
+              <c>true</c> if this instance has error; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.IsDirty">
+            <summary>
+            Gets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.AddNew(Customer.TestSLATE.Mnemonic.Models.NamedConfigItem)">
+            <summary>
+            Adds the new.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.UpdateValue(System.Int32,System.String,System.Int32,System.Single)">
+            <summary>
+            Updates the value at the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="stringValue"></param>
+            <param name="intValue"></param>
+            <param name="floatValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.Save">
+            <summary>
+            Saves the specified cell id.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            </summary>
+            Gets the error message. />
+            <param name="index">The index.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.IsValid">
+            <summary>
+            Gets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.CircularBufferConfig.Validate">
+            <summary>
+            Validates the Collection of Channels
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.DefaultChannels">
+            <summary>
+              An extension of the base Jacobs.TestVIEW.Cell.DomainLayer.Channels.ObjectClass with validation built in.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.DefaultChannels.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.DefaultChannels.GetCount">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.DefaultChannels.GetAt(System.Int32)">
+            <summary>
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.IChannelModel">
+            <summary>
+            This interface defines a common depiction of a model.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.IChannelModel.IsDirty">
+            <summary>
+            Gets or sets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="E:Customer.TestSLATE.Mnemonic.Models.IChannelModel.CollectionChanged">
+            <summary>
+            Occurs when [collection changed].
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.AddNew">
+            <summary>
+            Adds the new.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.Insert(System.Int32)">
+            <summary>
+            Inserts the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.Remove(System.Int32)">
+            <summary>
+            Removes the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.IChannelModel.IsValid">
+            <summary>
+            Gets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.Validate">
+            <summary>
+            Validates this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.SwapItems(System.Int32,System.Int32)">
+            <summary>
+            Swaps the items.
+            </summary>
+            <param name="sourceRow">The source row.</param>
+            <param name="targetRow">The target row.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.SetPresenter(Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter)">
+            <summary>
+            Updates channel numbers for this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.GetNameAt(System.Int32)">
+            <summary>
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IChannelModel.GetCount">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel">
+            <summary>
+            This interface defines a common depiction of a model.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel.IsDirty">
+            <summary>
+            Gets or sets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="E:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel.CollectionChanged">
+            <summary>
+            Occurs when [collection changed].
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel.AddNew(Customer.TestSLATE.Mnemonic.Models.NamedConfigItem)">
+            <summary>
+            Adds the new.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel.UpdateValue(System.Int32,System.String,System.Int32,System.Single)">
+            <summary>
+            Inserts the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="stringValue"></param>
+            <param name="intValue"></param>
+            <param name="floatValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel.GetItemAt(System.Int32)">
+            <summary>
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel.IsValid">
+            <summary>
+            Gets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IItemCollectionModel.Validate">
+            <summary>
+            Validates this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.IModel">
+            <summary>
+            This interface defines a common depiction of a model.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.IModel.IsDirty">
+            <summary>
+            Gets or sets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="E:Customer.TestSLATE.Mnemonic.Models.IModel.CollectionChanged">
+            <summary>
+            Occurs when [collection changed].
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IModel.AddNew">
+            <summary>
+            Adds the new.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IModel.Insert(System.Int32)">
+            <summary>
+            Inserts the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IModel.Remove(System.Int32)">
+            <summary>
+            Removes the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IModel.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IModel.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.IModel.IsValid">
+            <summary>
+            Gets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IModel.Validate">
+            <summary>
+            Validates this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.IModel.SwapItems(System.Int32,System.Int32)">
+            <summary>
+            Swaps the items.
+            </summary>
+            <param name="sourceRow">The source row.</param>
+            <param name="targetRow">The target row.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.RFMConfig">
+            <summary>
+            A collection of Reflective Memory Configuration Items (NamedConfigItem)
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.RFMConfig._cellId">
+            <summary>
+            The Cell Id.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.RFMConfig._srcId">
+            <summary>
+            The Source Id.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.RFMConfig._doc">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.RFMConfig.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customer.TestSLATE.Mnemonic.Models.Channels`1"/> class.
+            </summary>
+            <param name="cellId">The cell id.</param>
+            <param name="srcId">The Source id.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.RFMConfig.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customer.TestSLATE.Mnemonic.Models.Channels`1"/> class.
+            </summary>
+            <param name="cellId">The cell id.</param>
+            <param name="srcId">The Source id.</param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.RFMConfig.GetItemAt(System.Int32)">
+            <summary>
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.RFMConfig.HasError">
+            <summary>
+            Gets a value indicating whether this instance has error.
+            </summary>
+            <value>
+              <c>true</c> if this instance has error; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.RFMConfig.IsDirty">
+            <summary>
+            Gets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.RFMConfig.AddNew(Customer.TestSLATE.Mnemonic.Models.NamedConfigItem)">
+            <summary>
+            Adds the new.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.RFMConfig.UpdateValue(System.Int32,System.String,System.Int32,System.Single)">
+            <summary>
+            Updates the value at the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="stringValue"></param>
+            <param name="intValue"></param>
+            <param name="floatValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.RFMConfig.Save">
+            <summary>
+            Saves the specified cell id.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.RFMConfig.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.RFMConfig.IsValid">
+            <summary>
+            Gets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.RFMConfig.Validate">
+            <summary>
+            Validates the Collection of Channels
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem">
+            <summary>
+              An extension of the base Jacobs.TestVIEW.Cell.DomainLayer.Channels.ObjectClass with validation built in.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem._ItemName">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem._StringValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem._IntValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem._FloatValue">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.CellID">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.SourceID">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem._backup">
+            <summary>
+              Backup of this instance.
+              This preserves the state of this model during user edits, before the changes are committed.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem._inTransaction">
+            <summary>
+              Indicates that the user is still making changes and has not committed them.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.#ctor(System.String,System.String)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem" /> class.
+              This is a private constructor that generates a default object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.#ctor(System.String,System.Int32)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem" /> class.
+              This is a private constructor that generates a default object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.#ctor(System.String,System.Single)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem" /> class.
+              This is a private constructor that generates a default object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.#ctor">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem" /> class.
+              This is a private constructor that generates a default object.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.ItemName">
+            <summary>
+              Gets or sets the Item Name.
+            </summary>
+            <value>The Item Name.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.StringValue">
+            <summary>
+              Gets or sets the Item Value.
+            </summary>
+            <value>The Item's String Value.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.IntValue">
+            <summary>
+              Gets or sets the Item's Int Value.
+            </summary>
+            <value>The Item Value.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.FloatValue">
+            <summary>
+              Gets or sets the Item's Float Value.
+            </summary>
+            <value>The Item Value.</value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.Dirty">
+            <summary>
+              Gets or sets a value indicating whether this <see cref = "T:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem" /> is dirty.
+            </summary>
+            <value>
+              <c>true</c> if dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.Validator">
+            <summary>
+              The balance validator.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.CompareTo(Customer.TestSLATE.Mnemonic.Models.NamedConfigItem)">
+            <summary>
+              Compares the current object with another object of the same type.
+              Specifically this compares balances by BalanceOrder.
+            </summary>
+            <param name = "other">An object to compare with this object.</param>
+            <returns>
+              A 32-bit signed integer that indicates the relative order of the objects being compared. The return value has the following meanings: Value Meaning Less than zero This object is less than the other parameter.Zero This object is equal to other. Greater than zero This object is greater than other.
+            </returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.BeginEdit">
+            <summary>
+              Begins an edit on an object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.CancelEdit">
+            <summary>
+              Discards changes since the last <see cref = "M:System.ComponentModel.IEditableObject.BeginEdit"></see> call.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.EndEdit">
+            <summary>
+              Pushes changes since the last <see cref = "M:System.ComponentModel.IEditableObject.BeginEdit"></see> or <see cref = "M:System.ComponentModel.IBindingList.AddNew"></see> call into the underlying object.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.Equals(Customer.TestSLATE.Mnemonic.Models.NamedConfigItem)">
+            <summary>
+              Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name = "other">An object to compare with this object.</param>
+            <returns>
+              True if the current object is equal to the other parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="E:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.PropertyChanged">
+            <summary>
+              Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.CreateNewNamedConfigItem(System.String,System.String)">
+            <summary>
+              This is the public factory method that returns the default object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.ToString">
+            <summary>
+              Returns a <see cref = "T:System.String"></see> that represents the current <see cref = "T:System.Object"></see>.
+            </summary>
+            <returns>
+              A <see cref = "T:System.String"></see> that represents the current <see cref = "T:System.Object"></see>.
+            </returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.NotifyPropertyChanged(System.String)">
+            <summary>
+              Notifies the property changed.
+            </summary>
+            <param name = "info">The info.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItem.Save(System.Int32,System.Int32)">
+            <summary>
+              Saves this instance.
+            </summary>
+            <param name = "cellId">The cell id.</param>
+            <param name = "srcId">The config id.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator">
+            <summary>
+              This class provides all of the validation for a Channel.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.PropertyNameItemName">
+            <summary>
+              The string representation of the ItemName property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.PropertyNameItemValue">
+            <summary>
+              The string representation of the ItemAddr property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.PropertyNameInvalid">
+            <summary>
+              The string representation of an Invalid property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.PropertyNameIsvalid">
+            <summary>
+              The string representation of the IsValid property.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator._ItemName">
+            <summary>
+              The channel the Validator is associated with.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator._StringValue">
+            <summary>
+              The string value for this item.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator._IntValue">
+            <summary>
+              The int value for this item.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator._FloatValue">
+            <summary>
+              The float value for this item.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator._propertyErrors">
+            <summary>
+              The collection of property errors.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.#ctor(Customer.TestSLATE.Mnemonic.Models.NamedConfigItem)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator" /> class.
+            </summary>
+            <param name = "cfgItem">The channel.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.#ctor(Customer.TestSLATE.Mnemonic.Models.NamedConfigItem,System.Boolean)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator" /> class.
+            </summary>
+            <param name = "cfgItem">The channel.</param>
+            <param name = "defaultInvalid">if set to <c>true</c> [default invalid].</param>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.IsValid">
+            <summary>
+              Gets or sets a value indicating whether this instance is valid.
+            </summary>
+            <value>
+              <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.InvalidName">
+            <summary>
+              Gets or sets a value indicating whether [invalid name].
+            </summary>
+            <value>
+              <c>true</c> if [invalid name]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.Item(System.String)">
+            <summary>
+              Gets the <see cref = "T:System.String" /> with the specified property name.
+            </summary>
+        </member>
+        <member name="E:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.PropertyChanged">
+            <summary>
+              Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.RegisterError(System.String,System.String)">
+            <summary>
+              Registers the error.
+            </summary>
+            <param name = "propertyName">Name of the property.</param>
+            <param name = "message">The message.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.ClearError(System.String)">
+            <summary>
+              Clears the error.
+            </summary>
+            <param name = "propertyName">Name of the property.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.NotifyPropertyChanged(System.String)">
+            <summary>
+              Notifies the property changed.
+            </summary>
+            <param name = "info">The info.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.OnChannelPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+              Called when [balance property changed].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.ComponentModel.PropertyChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.Validate">
+            <summary>
+              Validates this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Models.NamedConfigItemValidator.ValidateName(System.String)">
+            <summary>
+              Validates the name.
+            </summary>
+            <param name = "name">The name.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter">
+            <summary>
+            The presenter handles the interactions between the UI layer and the data/valdiation model.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter._history">
+            <summary>
+            The command history.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter._CellChanged">
+            <summary>
+            Indicates whether EditBox associated with this item has been modified.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter"/> class.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.CurrentViewIndex">
+            <summary>
+            Gets or sets the index for the current view.
+            </summary>
+            <value>
+            The index for the current view.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>
+            The view.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.ChnlModels">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The Channel model.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.IsValid">
+            <summary>
+            Gets or sets a value indicating whether this instance is data valid.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is data valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.IsDirty">
+            <summary>
+            Gets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.Initialize">
+            <summary>
+            Initializes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.OnCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Called when [collection changed].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.Append">
+            <summary>
+            Appends an object to this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.Insert(System.Int32)">
+            <summary>
+            Inserts an object at the specified index.
+            </summary>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.Delete(System.Int32)">
+            <summary>
+            Deletes an object from the specified index.
+            </summary>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.Undo">
+            <summary>
+            Undoes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.Redo">
+            <summary>
+            Redoes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="propertyName">The propertyName.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.Validate(System.Int32)">
+            <summary>
+            Validates the specified balance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.ValidateAll">
+            <summary>
+            Validates all balances.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.CellChanged">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.ChannelPresenter.SwapRows(System.Int32,System.Int32)">
+            <summary>
+            Swaps the rows.
+            </summary>
+            <param name="sourceRow">The source row.</param>
+            <param name="targetRow">The target row.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter">
+            <summary>
+            The presenter handles the interactions between the UI layer and the data/valdiation model.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter._history">
+            <summary>
+            The command history.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter"/> class.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.CurrentViewIndex">
+            <summary>
+            Gets or sets the index for the current view.
+            </summary>
+            <value>
+            The index for the current view.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>
+            The view.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The Item model.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.IsValid">
+            <summary>
+            Gets or sets a value indicating whether this instance is data valid.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is data valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.IsDirty">
+            <summary>
+            Gets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.Initialize">
+            <summary>
+            Initializes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.OnCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Called when [collection changed].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.Undo">
+            <summary>
+            Undoes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.Redo">
+            <summary>
+            Redoes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="propertyName">The propertyName.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.Validate(System.Int32)">
+            <summary>
+            Validates the specified RFM Config Item.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.ValidateAll">
+            <summary>
+            Validates all balances.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.EditBoxPresenter.DataChanged(System.Int32,System.String,System.Int32,System.Single)">
+            <summary>
+            Validates all balances.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter">
+            <summary>
+            The presenter handles the interactions between the UI layer and the data/valdiation model.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter._history">
+            <summary>
+            The command history.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter"/> class.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>
+            The view.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.IsValid">
+            <summary>
+            Gets or sets a value indicating whether this instance is data valid.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is data valid; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.IsDirty">
+            <summary>
+            Gets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.Initialize">
+            <summary>
+            Initializes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.OnCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Called when [collection changed].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.Append">
+            <summary>
+            Appends an object to this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.Insert(System.Int32)">
+            <summary>
+            Inserts an object at the specified index.
+            </summary>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.Delete(System.Int32)">
+            <summary>
+            Deletes an object from the specified index.
+            </summary>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.Undo">
+            <summary>
+            Undoes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.Redo">
+            <summary>
+            Redoes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.GetErrorMessage(System.Int32,System.String)">
+            <summary>
+            Gets the error message.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="propertyName">The propertyName.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.Validate(System.Int32)">
+            <summary>
+            Validates the specified balance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.ValidateAll">
+            <summary>
+            Validates all balances.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.Presenters.GridPresenter.SwapRows(System.Int32,System.Int32)">
+            <summary>
+            Swaps the rows.
+            </summary>
+            <param name="sourceRow">The source row.</param>
+            <param name="targetRow">The target row.</param>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Acquire">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to True.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.AddSourcePermission">
+            <summary>
+              Looks up a localized string similar to Add Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.AddTemplate">
+            <summary>
+              Looks up a localized string similar to New Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Calibrate">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to True.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.CircularBufferInSeconds">
+            <summary>
+              Looks up a localized string similar to 2.1.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.CompatibleWithVersions">
+            <summary>
+              Looks up a localized string similar to 12.*.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ConfigLevelPluginPath">
+            <summary>
+              Looks up a localized string similar to SystemExplorer/Configuration.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ConfigPluginAppender">
+            <summary>
+              Looks up a localized string similar to Cfg.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Confirmation">
+            <summary>
+              Looks up a localized string similar to Confirmation.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ConfirmationDeleteRows">
+            <summary>
+              Looks up a localized string similar to Delete rows?.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DataSourceRate">
+            <summary>
+              Looks up a localized string similar to 10.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultAIDescription">
+            <summary>
+              Looks up a localized string similar to Analog Input Channel.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultAIName">
+            <summary>
+              Looks up a localized string similar to NewAI.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultAODescription">
+            <summary>
+              Looks up a localized string similar to Analog Output Channel.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultAOName">
+            <summary>
+              Looks up a localized string similar to NewAO.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultBalName">
+            <summary>
+              Looks up a localized string similar to New Balance.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultDescription">
+            <summary>
+              Looks up a localized string similar to Balance Description.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultDIDescription">
+            <summary>
+              Looks up a localized string similar to Digital Input Channel.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultDIName">
+            <summary>
+              Looks up a localized string similar to NewDI.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultDODescription">
+            <summary>
+              Looks up a localized string similar to Digital Output Channel.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultDOName">
+            <summary>
+              Looks up a localized string similar to NewDO.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.DefaultFilePath">
+            <summary>
+              Looks up a localized string similar to C:\temp\temp.txt.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Diagnostics">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to True.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.EditNode">
+            <summary>
+              Looks up a localized string similar to Edit Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.EditTemplate">
+            <summary>
+              Looks up a localized string similar to Edit Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ErrorMessage0001">
+            <summary>
+              Looks up a localized string similar to Mnemonic caught fire..
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.EUDType">
+            <summary>
+              Looks up a localized resource of type System.Int32 similar to 2.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ExecCode">
+            <summary>
+              Looks up a localized string similar to SOURCE.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ExecName">
+            <summary>
+              Looks up a localized string similar to MOC.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ExecuteTemplateCalibration">
+            <summary>
+              Looks up a localized string similar to Execute Mnemonic Calibration.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ExecuteTemplateDiagnostic">
+            <summary>
+              Looks up a localized string similar to Diagnostics.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ExecuteTemplateExecute">
+            <summary>
+              Looks up a localized string similar to Execute.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.HighRFMEnd">
+            <summary>
+              Looks up a localized resource of type System.Int32 similar to 100000000.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.HighRFMStart">
+            <summary>
+              Looks up a localized resource of type System.Int32 similar to 90000000.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Initialize">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to True.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.InitializeAtPath">
+            <summary>
+              Looks up a localized string similar to SystemExplorer/Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ListenForAll">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to True.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.MainMenuPluginPath">
+            <summary>
+              Looks up a localized string similar to MainWindow.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Manufacturer">
+            <summary>
+              Looks up a localized string similar to Template Manufacturer.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.MenuItemCalibrateSource">
+            <summary>
+              Looks up a localized string similar to Calibrate Mnemonic Source.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.MenuItemTemplate">
+            <summary>
+              Looks up a localized string similar to Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.MenuPluginAppender">
+            <summary>
+              Looks up a localized string similar to Mnu.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Mnemonic">
+            <summary>
+              Looks up a localized string similar to Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.NoBlankSourceName">
+            <summary>
+              Looks up a localized string similar to Source Name cannot be blank.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.NodeName">
+            <summary>
+              Looks up a localized string similar to Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.PCName">
+            <summary>
+              Looks up a localized string similar to MOC.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.PerformanceFunctionsPath">
+            <summary>
+              Looks up a localized string similar to \Customer.TestSLATE.Mnemonic.llb\Performance Functions.vi.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.PluginName">
+            <summary>
+              Looks up a localized string similar to Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.PluginVersion">
+            <summary>
+              Looks up a localized string similar to 1.0.0.0.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.PortNumber">
+            <summary>
+              Looks up a localized resource of type System.Int32 similar to 28880.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ProcessName">
+            <summary>
+              Looks up a localized string similar to Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.ReloadDB">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to True.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.RemoveNode">
+            <summary>
+              Looks up a localized string similar to Remove Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.RemoveTemplate">
+            <summary>
+              Looks up a localized string similar to Remove Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.RenameTemplate">
+            <summary>
+              Looks up a localized string similar to Rename.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Required">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to False.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.RequiredSource">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to False.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.RFMExtraMemoryInBytes">
+            <summary>
+              Looks up a localized string similar to 0.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.SerialNumber">
+            <summary>
+              Looks up a localized string similar to 0.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.SourceID">
+            <summary>
+              Looks up a localized resource of type System.Int32 similar to -1.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.SourceLevelPluginPath">
+            <summary>
+              Looks up a localized string similar to SystemExplorer/Sources.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.SourceName">
+            <summary>
+              Looks up a localized string similar to Mnemonic.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.SourcePluginAppender">
+            <summary>
+              Looks up a localized string similar to Src.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Start">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to True.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.Stop">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to True.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.SystemExplorer">
+            <summary>
+              Looks up a localized string similar to SystemExplorer.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.TabText">
+            <summary>
+              Looks up a localized string similar to Mnemonic Editor.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.TabTextUnsaved">
+            <summary>
+              Looks up a localized string similar to Mnemonic Editor *.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.TVKill">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to True.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.VILLBName">
+            <summary>
+              Looks up a localized string similar to Customer.TestSLATE.Mnemonic.llb.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.VIName">
+            <summary>
+              Looks up a localized string similar to Mnemonic.vi.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.VIRelativeSourceDir">
+            <summary>
+              Looks up a localized string similar to Shared\SYSCOM.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.Properties.Resources.WritesToRFM">
+            <summary>
+              Looks up a localized resource of type System.Boolean similar to False.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.UI.IExportable">
+            <summary>
+              This interface indicates that this class is capable of exporting data to files.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.IExportable.Export">
+            <summary>
+              Exports this instance to file.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.IExportable.Export(System.String)">
+            <summary>
+              Exports this instance to file using the specified format specifier.
+            </summary>
+            <param name = "formatSpecifier">The format specifier.</param>
+            <remarks>
+              Valid format specifiers are: 'xlsx' and 'pdf'
+            </remarks>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.UI.IPrintable">
+            <summary>
+              This interface indicates that this class is capable of printing.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.IPrintable.Print">
+            <summary>
+              Prints this instance.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.UI.IReportable">
+            <summary>
+              This interface indicates that this class is capable of printing and writing reports to file.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.IReportable.PrintReport">
+            <summary>
+              Prints the report.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.IReportable.WriteReportToFile">
+            <summary>
+              Writes the report to file.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.IReportable.WriteReportToFile(System.String)">
+            <summary>
+              Writes the report to file.
+            </summary>
+            <param name = "formatSpecifier">The format specifier.</param>
+            <remarks>
+              Valid format specifiers are: 'csv' and 'pdf'
+            </remarks>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.UI.ISubsystemView">
+            <summary>
+              Interface that defines a generic view.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.AIData">
+            <summary>
+              Gets or sets the AI data source.
+            </summary>
+            <value>
+              The AI data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.AOData">
+            <summary>
+              Gets or sets the AO data source.
+            </summary>
+            <value>
+              The AO data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.DIData">
+            <summary>
+              Gets or sets the DI data source.
+            </summary>
+            <value>
+              The DI data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.DOData">
+            <summary>
+              Gets or sets the DO data source.
+            </summary>
+            <value>
+              The DO data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.RFMData">
+            <summary>
+              Gets or sets the RFM Config data source.
+            </summary>
+            <value>
+              The RFM Config data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.ChannelPresenter">
+            <summary>
+            Gets or sets the presenter.
+            </summary>
+            <value>
+            The presenter.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.RFMConfigPresenter">
+            <summary>
+            Gets or sets the presenter.
+            </summary>
+            <value>
+            The presenter.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.CircularBufferConfigPresenter">
+            <summary>
+            Gets or sets the presenter.
+            </summary>
+            <value>
+            The presenter.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.RefreshData">
+            <summary>
+              Refreshes the data.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.ISubsystemView.ShowUnsavedChanges">
+            <summary>
+              Shows the unsaved changes.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.UI.IView">
+            <summary>
+              Interface that defines a generic view.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.IView.Data">
+            <summary>
+              Gets or sets the data source.
+            </summary>
+            <value>
+              The data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.IView.Presenter">
+            <summary>
+            Gets or sets the presenter.
+            </summary>
+            <value>
+            The presenter.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.IView.RefreshData">
+            <summary>
+              Refreshes the data.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.IView.ShowUnsavedChanges">
+            <summary>
+              Shows the unsaved changes.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.UI.Editor">
+            <summary>
+              The Balances Editor. This is the Example User Interface.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.UI.Editor._downHitInfo">
+            <summary>
+              Tracks where the MouseDown event fires in the GridControl.
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.UI.Editor._cell">
+            <summary>
+            The Cell assoicated with the Editor
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.UI.Editor._config">
+            <summary>
+            The Configuration associated with the Editor
+            </summary>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.UI.Editor._source">
+            <summary>
+            The Source associated with the Editor
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.#ctor(Jacobs.TestSLATE.Cell.DomainLayer.Cells.ObjectClass,Jacobs.TestSLATE.Cell.DomainLayer.Configurations.ObjectClass,Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.UI.Editor" /> class.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.Append">
+            <summary>
+              Appends this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.Copy">
+            <summary>
+              Copies this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.Cut">
+            <summary>
+              Cuts this instance.
+            </summary>
+            <exception cref = "T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.Delete">
+            <summary>
+              Deletes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.Insert">
+            <summary>
+              Inserts this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.Paste">
+            <summary>
+              Pastes this instance.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.Editor.HasError">
+            <summary>
+              Gets a value indicating whether this instance has error.
+            </summary>
+            <value>
+              <c>true</c> if this instance has error; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.Editor.IsDirty">
+            <summary>
+              Gets or sets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.SaveChanges">
+            <summary>
+              Saves this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.Export">
+            <summary>
+              Exports this instance to file.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.Export(System.String)">
+            <summary>
+              Exports this instance to file using the specified format specifier.
+            </summary>
+            <param name = "formatSpecifier">The format specifier.</param>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.Editor.Data">
+            <summary>
+              Gets or sets the data source.
+            </summary>
+            <value>
+              The data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.Editor.Presenter">
+            <summary>
+              The presenter that provides this view with data.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.ShowUnsavedChanges">
+            <summary>
+              Indicates the unsaved changes.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.RefreshData">
+            <summary>
+              Refreshes the data.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnValidateRow(System.Object,DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs)">
+            <summary>
+              Called when [validate row].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+              Called when [key down].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.KeyEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnNavigatorButtonClick(System.Object,DevExpress.XtraEditors.NavigatorButtonClickEventArgs)">
+            <summary>
+              Called when [navigator button click].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraEditors.NavigatorButtonClickEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnInvalidRowException(System.Object,DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs)">
+            <summary>
+              Called when [invalid row exception].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnInvalidValueException(System.Object,DevExpress.XtraEditors.Controls.InvalidValueExceptionEventArgs)">
+            <summary>
+              Called when [invalid value exception].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraEditors.Controls.InvalidValueExceptionEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnCellValueChanged(System.Object,DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs)">
+            <summary>
+              Called when [cell value changed].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnDragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+              Called when [drag drop].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.DragEventArgs" /> instance containing the event data.</param>
+            <exception cref = "T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnDragOver(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+              Called when [drag over].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.DragEventArgs" /> instance containing the event data.</param>
+            <exception cref = "T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.MoveRow(System.Int32,System.Int32)">
+            <summary>
+              Moves the row.
+            </summary>
+            <param name = "sourceRow">The source row.</param>
+            <param name = "targetRow">The target row.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnLoad(System.Object,System.EventArgs)">
+            <summary>
+              Called when [load].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+              Called when [mouse down].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.MouseEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+              Called when [mouse move].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.MouseEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.OnDockSituationChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when [dock situation changed].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.UI.Editor.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Editor.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.UI.Rename">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Rename.#ctor(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Rename.OnLoad(System.Object,System.EventArgs)">
+            <summary>
+            Called when [load].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Rename.OnSaveClick(System.Object,System.EventArgs)">
+            <summary>
+            Called when [save click].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Rename.OnCancelClick(System.Object,System.EventArgs)">
+            <summary>
+            Called when [cancel click].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.UI.Rename.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Rename.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.Rename.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor">
+            <summary>
+              The Balances Editor. This is the Example User Interface.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.#ctor(Jacobs.TestSLATE.Cell.DomainLayer.Sources.ObjectClass)">
+            <summary>
+              Initializes a new instance of the <see cref = "T:Customer.TestSLATE.Mnemonic.UI.Editor" /> class.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.HasError">
+            <summary>
+              Gets a value indicating whether this instance has error.
+            </summary>
+            <value>
+              <c>true</c> if this instance has error; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.IsDirty">
+            <summary>
+              Gets or sets a value indicating whether this instance is dirty.
+            </summary>
+            <value>
+              <c>true</c> if this instance is dirty; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Data">
+            <summary>
+              Gets or sets the data source.
+            </summary>
+            <value>
+              The data source.
+            </value>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Copy">
+            <summary>
+              Copies this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Cut">
+            <summary>
+              Cuts this instance.
+            </summary>
+            <exception cref = "T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Paste">
+            <summary>
+              Pastes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Export">
+            <summary>
+              Exports this instance to file.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Export(System.String)">
+            <summary>
+              Exports this instance to file using the specified format specifier.
+            </summary>
+            <param name = "formatSpecifier">The format specifier.</param>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.AIData">
+            <summary>
+              Gets or sets the AI data source.
+            </summary>
+            <value>
+              The AI data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.AOData">
+            <summary>
+              Gets or sets the AO data source.
+            </summary>
+            <value>
+              The AO data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.DIData">
+            <summary>
+              Gets or sets the DI data source.
+            </summary>
+            <value>
+              The DI data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.DOData">
+            <summary>
+              Gets or sets the DO data source.
+            </summary>
+            <value>
+              The DO data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.RFMData">
+            <summary>
+              Gets or sets the RFM Config data source.
+            </summary>
+            <value>
+              The RFM Config data source.
+            </value>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.CircularBufferConfigPresenter">
+            <summary>
+              The presenter that provides this view with Circular Buffer configuration data.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.RFMConfigPresenter">
+            <summary>
+              The presenter that provides this view with RFM Config data.
+            </summary>
+        </member>
+        <member name="P:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.ChannelPresenter">
+            <summary>
+              The presenter that provides this view with data.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.ShowUnsavedChanges">
+            <summary>
+              Indicates the unsaved changes.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.RefreshData">
+            <summary>
+              Refreshes the data.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Append">
+            <summary>
+              Appends this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Delete">
+            <summary>
+              Deletes this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Insert">
+            <summary>
+              Inserts this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.SaveChanges">
+            <summary>
+              Saves this instance.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnValidateRow(System.Object,DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs)">
+            <summary>
+              Called when [validate row].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+              Called when [key down].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.KeyEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnNavigatorButtonClick(System.Object,DevExpress.XtraEditors.NavigatorButtonClickEventArgs)">
+            <summary>
+              Called when [navigator button click].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraEditors.NavigatorButtonClickEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnInvalidRowException(System.Object,DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs)">
+            <summary>
+              Called when [invalid row exception].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnInvalidValueException(System.Object,DevExpress.XtraEditors.Controls.InvalidValueExceptionEventArgs)">
+            <summary>
+              Called when [invalid value exception].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraEditors.Controls.InvalidValueExceptionEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnCellValueChanged(System.Object,DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs)">
+            <summary>
+              Called when [cell value changed].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnDragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+              Called when [drag drop].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.DragEventArgs" /> instance containing the event data.</param>
+            <exception cref = "T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnDragOver(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+              Called when [drag over].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.DragEventArgs" /> instance containing the event data.</param>
+            <exception cref = "T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.MoveRow(System.Int32,System.Int32)">
+            <summary>
+              Moves the row.
+            </summary>
+            <param name = "sourceRow">The source row.</param>
+            <param name = "targetRow">The target row.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnLoad(System.Object,System.EventArgs)">
+            <summary>
+              Called when [load].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+              Called when [mouse down].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.MouseEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnMouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+              Called when [mouse move].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.Windows.Forms.MouseEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnDockSituationChanged(System.Object,System.EventArgs)">
+            <summary>
+              Called when [dock situation changed].
+            </summary>
+            <param name = "sender">The sender.</param>
+            <param name = "e">The <see cref = "T:System.EventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnTabControlIndexChange(System.Object,System.EventArgs)">
+            <summary>
+            Called when [tab control index change].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.GetCurrentGrid">
+            <summary>
+            Gets the current grid.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnEditBoxLostFocus(System.Object,System.EventArgs)">
+            <summary>
+            Called when [edit box lost focus].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnEditBoxGotFocus(System.Object,System.EventArgs)">
+            <summary>
+            Called when [edit box got focus].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.OnTextControlChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when [text control changed].
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UI.SubsystemEditor.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Customer.TestSLATE.Mnemonic.UnitTests.ModelTests">
+            <summary>
+            Unit Tests for the Model Class.
+            </summary>
+        </member>
+        <member name="M:Customer.TestSLATE.Mnemonic.UnitTests.ModelTests.BalanceConstructor">
+            <summary>
+            Model Constructor Unit Test
+            </summary>
+        </member>
+    </members>
+</doc>
